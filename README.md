@@ -31,8 +31,11 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 - Download Hadolint
 - Run `make lint` to check your Dockerfile
 
-1. Complete the given Dockerfile and bash script named `run_docker.sh` 
-2. run bash script `./run_docker.sh`
+1. Completed the given Dockerfile and bash script named `run_docker.sh` 
+2. run bash script `./run_docker.sh` to run the app in docker container
 3. Now open another terminal and run `./make_prediction.sh`
-4. Complete the given bash script named `upload_docker.sh` and run it.
-5. To create cluster and run in Kubernetes complete `./run_kubernetes.sh`
+4. Copy the output and paste in docker_out.txt
+5. Completed the given bash script named `upload_docker.sh` and run it.
+6. Docker container uploaded to docker hub. Docker id:- arch09 container name:- projectfours
+5. To create cluster and run in Kubernetes completed the given `./run_kubernetes.sh`
+
