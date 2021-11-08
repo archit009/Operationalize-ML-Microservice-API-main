@@ -28,16 +28,11 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 - Create a virtualenv and activate it
 - Run `make install` to install the necessary dependencies
+- Download Hadolint
+- Run `make lint` to check your Dockerfile
 
-### Running `app.py`
-
-1. Standalone: `python app.py`
-2. Run in Docker: `./run_docker.sh`
-3. Run in Kubernetes: `./run_kubernetes.sh`
-
-### Kubernetes Steps
-
-- Setup and Configure Docker locally
-- Setup and Configure Kubernetes locally
-- Create Flask app in Container
-- Run via kubectl
+1. Complete the given Dockerfile and bash script named `run_docker.sh` 
+2. run bash script `./run_docker.sh`
+3. Now open another terminal and run `./make_prediction.sh`
+4. Complete the given bash script named `upload_docker.sh` and run it.
+5. To create cluster and run in Kubernetes complete `./run_kubernetes.sh`
