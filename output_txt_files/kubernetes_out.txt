@@ -1,15 +1,17 @@
-<paste log output from Kubernetes-mediated prediction, here>
-
-Error from server (AlreadyExists): pods "house-prediction" already exists
-NAMESPACE     NAME                               READY   STATUS    RESTARTS         AGE
-default       house-prediction                   1/1     Running   0                4m20s
-kube-system   coredns-78fcd69978-9mgxd           1/1     Running   3 (9m36s ago)    12d
-kube-system   etcd-minikube                      1/1     Running   3 (9m41s ago)    12d
-kube-system   kube-apiserver-minikube            1/1     Running   3 (9m31s ago)    12d
-kube-system   kube-controller-manager-minikube   1/1     Running   3 (9m41s ago)    12d
-kube-system   kube-proxy-d5ck2                   1/1     Running   3 (9m41s ago)    12d
-kube-system   kube-scheduler-minikube            1/1     Running   3 (9m31s ago)    12d
-kube-system   storage-provisioner                1/1     Running   11 (8m55s ago)   12d
+(.devops) voclabs:~/environment/microservice-api-project (main) $ kubectl run projectfours --image=$dockerpath --port=80
+Error from server (AlreadyExists): pods "projectfours" already exists
+(.devops) voclabs:~/environment/microservice-api-project (main) $ kubectl get pods --all-namespaces                        
+NAMESPACE     NAME                               READY   STATUS    RESTARTS      AGE
+default       projectfour                        1/1     Running   0             25m
+default       projectfours                       1/1     Running   0             7m54s
+kube-system   coredns-78fcd69978-sqj7b           1/1     Running   0             32m
+kube-system   etcd-minikube                      1/1     Running   0             32m
+kube-system   kube-apiserver-minikube            1/1     Running   0             32m
+kube-system   kube-controller-manager-minikube   1/1     Running   0             32m
+kube-system   kube-proxy-bwfc9                   1/1     Running   0             32m
+kube-system   kube-scheduler-minikube            1/1     Running   0             32m
+kube-system   storage-provisioner                1/1     Running   1 (31m ago)   32m
+(.devops) voclabs:~/environment/microservice-api-project (main) $ kubectl port-forward pod/projectfours 8000:80
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000

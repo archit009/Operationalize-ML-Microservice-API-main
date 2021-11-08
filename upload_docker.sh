@@ -6,13 +6,13 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-export dockerpath=kevinluu10/house-prediction
+export dockerpath=arch09/projectfours
 
 # Step 2:
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login --username kevinluu10
-docker tag house-prediction $dockerpath
+docker login --username arch09
+docker tag projectfours $dockerpath
 
 # Step 3:
 # Push image to a docker repository
